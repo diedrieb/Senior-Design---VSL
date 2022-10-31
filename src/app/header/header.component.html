@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+      <span>Value Student Life</span>
+      <span class="example-spacer"></span>
+    <span>Test test</span>
+    <button mat-icon-button [matMenuTriggerFor]="belowMenu" class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #belowMenu="matMenu" yPosition="below">
+        <button mat-menu-item>Profile</button>
+        <button mat-menu-item>Log out</button>
+      </mat-menu>
+</mat-toolbar>
+<!-- <mat-tab-group>
+    <mat-tab label="Renter"> Renter info </mat-tab>
+    <mat-tab label="Subletter"> Subletter info </mat-tab>
+</mat-tab-group> -->
