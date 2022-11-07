@@ -1,4 +1,4 @@
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
+<!--<table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
    
     <ng-container matColumnDef="demo-name">
       <th mat-header-cell *matHeaderCellDef> Name </th>
@@ -19,5 +19,16 @@
   
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-  </table>
+  </table>-->
+
+  <mat-card>
+    <mat-card-title-group>
+      <img mat-card-md-image src="img/randomHouse.jpeg">
+      <mat-card-title>Address of the Sublease</mat-card-title>
+      <mat-card-subtitle>Name of the Person Subleasing</mat-card-subtitle>
+    </mat-card-title-group>
+    <mat-card-actions>
+      <button mat-button>More Info</button>  
+    </mat-card-actions>
+  </mat-card>
   

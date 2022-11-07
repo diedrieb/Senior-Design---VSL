@@ -7,3 +7,6 @@ input,
 label {
     margin: .4rem 0;
 }
+.example-spacer {
+    flex: 1 1 auto;
+  }

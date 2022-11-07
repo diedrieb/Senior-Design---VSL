@@ -2,15 +2,21 @@
       <span>Value Student Life</span>
       <span class="example-spacer"></span>
     <span>Test test</span>
-    <button mat-icon-button [matMenuTriggerFor]="belowMenu" class="example-icon" aria-label="Example icon-button with menu icon">
-        <mat-icon>menu</mat-icon>
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <span>Profile</span>
       </button>
-      <mat-menu #belowMenu="matMenu" yPosition="below">
-        <button mat-menu-item>Profile</button>
-        <button mat-menu-item>Log out</button>
-      </mat-menu>
+      <button mat-menu-item>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
 </mat-toolbar>
-<!-- <mat-tab-group>
-    <mat-tab label="Renter"> Renter info </mat-tab>
-    <mat-tab label="Subletter"> Subletter info </mat-tab>
-</mat-tab-group> -->
+ <mat-tab-group backgroundColor="primary">
+    <mat-tab label="Browse for Places"><app-listings></app-listings></mat-tab>
+    <mat-tab label="My Likes"> Liked listings </mat-tab>
+    <mat-tab label="My Listings"> Insert person's listings </mat-tab>
+    <mat-tab label="Add a Sublease"><app-registration></app-registration></mat-tab>
+</mat-tab-group> 

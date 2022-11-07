@@ -15,6 +15,11 @@ import {MatTableModule} from '@angular/material/table';
 import { SearchComponent } from './search/search.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatSliderModule} from '@angular/material/slider';
+import {MatCardModule} from '@angular/material/card';
+import { RegistrationComponent } from './registration/registration.component';
+import {MatStepperModule} from '@angular/material/stepper';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MainPageComponent,
     HeaderComponent,
     ListingsComponent,
-    SearchComponent
+    SearchComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +40,12 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatMenuModule,
     MatTableModule,
     MatInputModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatSliderModule,
+    MatCardModule,
+    MatStepperModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
