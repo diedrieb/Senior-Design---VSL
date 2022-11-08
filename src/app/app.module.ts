@@ -20,6 +20,7 @@ import {MatCardModule} from '@angular/material/card';
 import { RegistrationComponent } from './registration/registration.component';
 import {MatStepperModule} from '@angular/material/stepper';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PopupComponent } from './popup/popup.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     ListingsComponent,
     SearchComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,

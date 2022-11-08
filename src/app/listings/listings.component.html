@@ -20,15 +20,19 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>-->
-
-  <mat-card>
+  
+  <mat-card class="example-card" *ngFor="let list of lists">
     <mat-card-title-group>
-      <img mat-card-md-image src="img/randomHouse.jpeg">
-      <mat-card-title>Address of the Sublease</mat-card-title>
-      <mat-card-subtitle>Name of the Person Subleasing</mat-card-subtitle>
+      <img mat-card-md-image src="assets/img/randomHouse.jpeg" alt="no image">
+      <mat-card-title>{{list.street}}</mat-card-title>
+      <mat-card-subtitle>{{list.name}}</mat-card-subtitle>
     </mat-card-title-group>
     <mat-card-actions>
-      <button mat-button>More Info</button>  
+      <button mat-button >More Info</button>
+      <button mat-icon-button color="secondary" aria-label="Example icon button with a heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>  
     </mat-card-actions>
   </mat-card>
+
   
