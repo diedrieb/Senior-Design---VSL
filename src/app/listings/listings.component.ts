@@ -9,6 +9,11 @@ import { LISTINGS_DATA } from './mockListings';
 export class ListingsComponent implements OnInit {
 
   lists = LISTINGS_DATA;
+  /*myDist = [];
+  addToLikes(lists){
+    // will extract the related key from Object here to push it in array
+    this.myDist.push(lists);
+ }*/
 
   constructor() { }
 
