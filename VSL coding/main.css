@@ -1,10 +1,10 @@
 #map{
     float:left;
-    width: 50%;
-    height: 600px;
+    width: 60%;
+    height: 855px;
     margin: 20px auto;
-    margin-top: 170px;
-    margin-left: 75px;
+    margin-top: 25px;
+    margin-left: 5px;
 }
 
 html,
@@ -13,8 +13,82 @@ body{
     margin: 0;
     padding: 0;
 }
+#description {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#infowindow-content .title {
+  font-weight: bold;
+}
+
+#infowindow-content {
+  display: none;
+}
+
+#map #infowindow-content {
+  display: inline;
+}
+
+.pac-card {
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 0 0.5em;
+  font: 400 18px Roboto, Arial, sans-serif;
+  overflow: hidden;
+  font-family: Roboto;
+  padding: 0;
+}
+
+#pac-container {
+  padding-bottom: 12px;
+  margin-right: 12px;
+}
+
+.pac-controls {
+  display: inline-block;
+  padding: 10px 11px;
+}
+
+.pac-controls label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 400px;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+#title {
+  color: #fff;
+  background-color: #4d90fe;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+
+#target {
+  width: 345px;
+}
 
 #floating-panel {
+    position: relative;
     overflow: hidden;
     background-color: #333;
   }
@@ -27,6 +101,9 @@ body{
     padding: 14px 16px;
     text-decoration: none;
   }
+
+
+  
 
 
 .dropdown {
@@ -43,6 +120,14 @@ body{
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+  }
+  
+  .topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .navbar a:hover, .dropdown:hover .dropbtn {
@@ -74,5 +159,50 @@ body{
 .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  /* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+.column {
+  float: right;
+  width: 35%;
+  padding: 25px;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 365px;
+  right: 410px;
+  background-color: white;
+  color: black;
+  padding-left: 25px;
+  padding-right: 20px;
+}
+
+
+
+
+  /* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+  
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
   
   
