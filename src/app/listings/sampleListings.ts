@@ -1,6 +1,7 @@
 export interface sampleListings {
     name: string;
-    street: string;
+    address: string;
     type: string;
+    rent: string;
   }
   

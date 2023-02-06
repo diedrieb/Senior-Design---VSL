@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import {FormBuilder, Validators} from '@angular/forms';
-import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
+import {SharedService} from "../services/shared.service"
+import {sampleListings} from "../listings/sampleListings"
 
 @Component({
   selector: 'app-registration',
@@ -8,16 +9,25 @@ import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
   styleUrls: ['./registration.component.css'],
 })
 export class RegistrationComponent implements OnInit {
-  firstFormGroup = this._formBuilder.group({
-    firstCtrl: ['', Validators.required],
-  });
-  secondFormGroup = this._formBuilder.group({
-    secondCtrl: ['', Validators.required],
-  });
-  isLinear = false;
-  constructor(private _formBuilder: FormBuilder) { }
+  
+  constructor(private shared:SharedService) { }
 
   ngOnInit(): void {
   }
+  userName='';
+  userAddress='';
+  userRent='';
+  userType='';
+  newType= 'idk';
+  @Output() newListingCreated = new EventEmitter();
+
+  onAddListing(){
+    //this.newType=this.userType;
+    const newList: sampleListings = { name: this.userName, address: this.userAddress, type: this.userType, rent: this.userRent};
+    console.log(newList);
+    //this.newListingCreated.emit(newList);
+    this.shared.setMessage(newList);
+  }
+
 
 }
