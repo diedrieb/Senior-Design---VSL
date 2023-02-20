@@ -14,6 +14,25 @@ body{
     margin: 0;
     padding: 0;
 }
+
+p {
+  text-align: justify;
+  margin: 0 auto;
+  width: 60em;
+  font-style: normal;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+pre {
+  text-align: justify;
+  margin: 0 auto;
+  width: 63em;
+  font-style: normal;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 #description {
   font-family: Roboto;
   font-size: 15px;
